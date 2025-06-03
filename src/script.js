@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   let tasks = [];
-  const stored = JSON.parse(localStorage.getItem("taskList"));
+if (stored && Array.isArray(stored)) {
+  tasks = stored;
   stored.forEach(rendertask);
+}
+
   document
     .getElementById("addTask")
     .addEventListener("submit", function (event) {
