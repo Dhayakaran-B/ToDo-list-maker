@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-red-100 to-red-300 w-full min-h-screen flex flex-col items-center justify-center bg"
+  >
+    <div
+      class="p-[40px] bg-amber-50 flex flex-col items-center justify-center rounded-xl"
+    >
+      <h1
+        style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+        class="text-[32px] font-bold mb-[20px]"
+      >
+        To DO List
+      </h1>
+      <form id="addTask" class="mb-[35px]" action="">
+        <input
+          id="task"
+          class="pl-[10px] border-1 p-[4px] m-[12px] rounded-sm"
+          type="text"
+          placeholder="enter task"
+          style="height: 50px"
+        />
+        <button class="task" type="submit">Add task</button>
+      </form>
+      <h2
+        style="font-family: Georgia, 'Times New Roman', Times, serif"
+        class="text-[24px] mb-[20px] font-bold"
+      >
+        Your Tasks
+      </h2>
+      <ul id="taskList" class="w-full"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
